@@ -1,0 +1,267 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+div{
+	height: 117vh;
+}
+
+//pirma dalis
+
+.div1{
+	height: 900px;
+	background-image: url(photos/black.jpg);
+	background-size: cover;
+} 
+
+ul{
+	list-style: none;
+}
+
+.mainnav{
+	display: inline-block;
+	float: right;
+	margin-right: 10vw;
+	text-decoration: none;
+	margin-top: 10%;
+	font-size: 4vh;
+	font-family: 'Poiret One';
+	line-height: 12vh
+}
+
+.firstImg{
+	float: left;
+	height: 115vh;
+	position: relative;
+	display: block;
+	margin: auto;
+	z-index: 1;
+	top: 0;
+	margin-top: 0px;
+	margin-left: 0;
+	animation-name: flowImage;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+}
+
+.logo{
+	display: inline-block;
+	height: 64vh;
+	width: auto;
+	z-index:500;
+	margin-left: 57vh;
+	top: 0;
+	opacity: 0.7;
+	position: absolute;
+	animation-name: fadeIn;
+	animation-duration: 8s;
+	display: flex;
+}
+
+@keyframes flowImage{
+	from{
+		margin-left: -1000px;
+	}
+	to{
+		margin-left: 0px;
+	}
+}
+
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 0.7;
+	}
+}
+
+@keyframes fadeIn2{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+//antra dalis
+
+.dots{
+	height: 60vh;
+	width: auto;
+	margin-left: 1.3vh;
+	margin-top: 95vh;
+	padding-top: 2.6vh;
+	display: flex;
+	animation-name: fadeIn2;
+	animation-duration: 8s;
+	animation-fill-mode: forwards;
+	opacity: 1
+}
+
+.div2{
+	height: 100%;
+}
+
+.img{
+	height: 70vh;
+	width: auto;
+/*	transform: translateY(26vh);
+	transition: 0.7s ease-in-out;
+	opacity: 0;*/
+}
+
+.img:hover{
+	border: 2px solid black;
+}
+
+/*.dots2{
+	position: absolute;
+	margin-left: 60%;
+	margin-top: 80%;
+	padding-top: 2.6vh;
+	display: flex;
+	animation-name: fadeIn2;
+	animation-duration: 8s;
+	animation-fill-mode: forwards;
+	opacity: 1;
+	z-index: -1;
+}*/
+
+.imgMain{
+	width: 69vh;
+	height: auto;
+	display: block;
+	margin-top: 17vh;
+	transform: translateY(26vh);
+	transition: 0.7s ease-in-out;
+	opacity: 0;
+	z-index: 5
+}
+
+.img1{
+	margin-left: 12%
+}
+
+.img2{
+	margin-left: 32%;
+	display: inline-block;
+	position: absolute;
+}
+
+.marble{
+	display: inline-block;
+	height: 70vh;
+	position: relative;
+	margin-left: 60%;
+	margin-top: 5%;
+	z-index: 1
+}
+
+/*.hands{
+	height: 100vh;
+	width: auto;
+	position: relative;
+	display: inline-block;
+	margin-left: 5%;
+	z-index: 1;
+}*/
+
+.img3{
+	margin-left: 52%;
+	display: inline-block;
+	z-index: 5;
+}
+
+.img4{
+	height: 62vh;
+	width: auto;
+	display: inline-block;
+	margin-right: 5%;
+	transform: translateX(36vh);
+}
+
+.img5{
+	height: 62vh;
+	width: auto;
+	display: inline-block;
+	margin-left: auto;
+	transform: translateX(-36vh);
+}
+
+section{
+	text-align: center;
+}
+
+.img6{
+	margin-left: 60vh
+}
+
+.img7{
+	width: 75vh;
+	height: auto;
+	margin-left: 15vh;
+
+}
+
+.img8{
+	margin-left: 70vh
+}
+
+.img9{
+	width: 72vh;
+	height: auto;
+	margin-left: 20vh
+}
+
+.img10{
+	margin-left: 40vh;
+}
+
+.img11{
+	margin-left: 70vh;
+}
+
+.img12{
+	margin-left: 50vh;
+}
+
+.img13{
+	margin-left: 70vh;
+}
+
+.img14{
+	margin-left: 30vh;
+	margin-bottom: 30vh;
+}
+
+@keyframes imgFromBott{
+	from{
+		margin-top: 91vh;
+	}
+	to{
+		margin-top: 19.5vh;
+	}
+}
+
+@keyframes imgFromBott3{
+	from{
+		margin-right: -91vh;
+	}
+	to{
+		margin-right: 26vh;
+	}
+}
+
+.isshowing{
+	transform: translateY(0px);
+	transform: translateX(0px);
+	opacity: 1
+}
